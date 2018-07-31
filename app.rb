@@ -47,8 +47,8 @@ class App < Sinatra::Base
   # 5 build a conditional
   get '/:operation/:num1/:num2' do
     @operation = params[:operation]
-    @number1 = params[:number1].to_i
-    @number2 = params[:number2].to_i
+    @num1 = params[:num1].to_i
+    @num2 = params[:num2].to_i
     if @operation == "multiply"
       (@num1 * @num2).to_s
     elsif @operation == "divide"
