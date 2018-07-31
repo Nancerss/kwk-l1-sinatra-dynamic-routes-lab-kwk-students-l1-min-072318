@@ -52,7 +52,7 @@ class App < Sinatra::Base
     if @operation == "multiply"
       (@num1 * @num2).to_s
     elsif @operation == "divide"
-      (@num1 / @num).to_s
+      (@num1 / @num2).to_s
     elsif @operation == "add"
       (@num1 + @num2).to_s
     elsif @operation == "subtract"
