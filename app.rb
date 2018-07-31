@@ -13,9 +13,10 @@ class App < Sinatra::Base
   end 
   
   get '/say/:num/:phrase' do
-    num = params[:num].to_i
     @phrase = params[:phrase]
     final_string = ""
+    
+    
     
   end
   
